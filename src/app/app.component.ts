@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +14,9 @@ import { AllTodosComponent } from './components/all-todos/all-todos.component';
     CommonModule,
     RouterOutlet,
     LoginComponent,
-    AllTodosComponent
+    AllTodosComponent,
+    FormsModule,
+    HttpClientModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
